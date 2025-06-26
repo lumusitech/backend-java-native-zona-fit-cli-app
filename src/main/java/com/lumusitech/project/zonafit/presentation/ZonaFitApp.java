@@ -45,12 +45,13 @@ public class ZonaFitApp {
 
         switch (option) {
             case 1 -> {
-                System.out.println("--- Listado de clientes ---");
+                System.out.println("--- Listado de Clientes ---");
                 var customers = customerDAO.findAll();
                 customers.forEach(System.out::println);
                 break;
             }
             case 2 -> {
+                System.out.println("--- Buscar Cliente ---");
                 int id;
                 try {
                     System.out.println("Introduce el id del cliente");
